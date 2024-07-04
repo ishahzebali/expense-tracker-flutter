@@ -32,11 +32,19 @@ class _ExpensesState extends State<Expenses> {
         backgroundColor: Colors.indigoAccent,
         title: const Text(
           'Expense Tracker',
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
         ),
         actions: [
           IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.add_circle_outline_rounded))
+            onPressed: () {},
+            icon: const Icon(
+              Icons.add_circle_outline_rounded,
+              color: Colors.white,
+            ),
+          ),
         ],
       ),
       body: Column(
